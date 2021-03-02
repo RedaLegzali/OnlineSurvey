@@ -1,0 +1,351 @@
+.load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width:100px;
+  height:100px;
+}
+.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+
+.load :first-child{background:#19A68C;animation-delay:-1.5s}
+.load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+.load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+.load :last-child{background:#193B48}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
+}
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect{
+  fill: #FF6700;
+}
+
+
+/* PRELOAD SCREEN END */
+
+#welcome{
+	text-align: center;
+	margin-top: 13vw;
+	font-family: 'Helvetica Neue';
+}
+
+#list li{
+	float: left;
+	font-weight: bold;
+	
+	padding: 5px;
+	list-style-type: none;
+	margin-left: 3vw;
+	margin-top: 10px;
+	font-size: 25px;
+}
+#list li a{
+	color: white;
+	text-decoration: none;
+}
+
+#list li a:hover{
+	color: rgb(0,123,255);
+}
+
+#end_list{
+	margin-right: 10vw;
+	font-weight: bold;
+}
+
+#steps{
+	height: 480px;
+	background-image: url('../img/steps.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#phone_content{
+    height: 75%;
+    width: 16.5%;
+    float: right;
+    margin-right:9.5%;
+    margin-top: 57px;
+    border-radius: 5%;
+    background-image: url('../img/test.png');
+    overflow: hidden;
+    background-attachment: fixed;
+	background-position: right;  
+}
+
+@media screen and (max-width: 986px) {
+	#sbu{
+		margin-left: 35% !important;
+	}
+
+
+	#left{
+		background-image: url('../img/left2.png') !important;
+	}
+
+	#mail_list li{
+		margin-top: 30px !important;
+		font-size: 22px !important;
+	}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+	#main{
+  		height: 75.75vw !important;
+  	}
+}
+
+@media screen and (max-width: 1259px) {
+
+
+
+
+  #list li{
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  #end_list{
+  	font-size: 18px;
+	margin-right: 7vw;
+	}
+	.card_title h1{
+	font-size: 25px;
+		}
+	.card{
+		margin-top: -5px;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	#welcome{
+		margin-top: 30px ;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	
+
+  #main{
+  	height: 48.75vw !important;
+  }
+  #bc{
+  	display: none !important;
+  }
+
+	
+  
+}
+
+@media screen and (max-height: 850px) {
+	
+
+  #fofo{
+  	height: 70% !important;
+  }
+
+  
+}
+
+@media screen and (max-height: 645px) {
+
+	
+
+  #fofo{
+  	height: 100% !important;
+  }
+
+
+  
+}
+
+@media screen and (max-height: 553px) {
+	#img_regi{
+		display: none;
+	}
+
+	#imgT,#imgR{
+		height: 100px !important;
+	}
+}
+
+
+@media screen and (max-height: 444px) {
+	
+
+  #imgT{
+  	height: 10% !important;
+  }
+  #secure{
+  	margin-top: 10% !important;
+  }
+
+  
+
+
+  
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+	
+
+  #test{
+		height: 1500px !important;
+		background-color: red;
+	}
+	#dv{
+		background-image: url('../img/dv2.png') !important;
+	}
+
+
+
+  
+}
+
+
+
+
+
+@media screen and (max-width: 510px) {
+
+	#welcome{
+		margin-top: 40vw !important;
+	}
+}
+
+@media screen and (max-width: 434px) {
+
+	#welcome{
+		margin-top: 35vw !important;
+	}
+	#sbu{
+		margin-left: 28% !important;
+	}
+}
+
+@media screen and (max-width: 411px) {
+
+	#welcome{
+		margin-top: 30vw !important;
+		font-size: 30px;
+	}
+	#welcome_desc{
+		font-size: 17px !important;
+	}
+}
+
+@media screen and (max-width: 356px) {
+
+	#welcome{
+		margin-top: 10vw !important;
+		font-size: 25px;
+	}
+	#welcome_desc{
+		font-size: 15px !important;
+	}
+	#sbu a{
+		font-size: 22px !important;
+	}
+}
+
+
+
+@media screen and (max-width: 637px) {
+
+	
+
+
+
+  #list li{
+    font-size: 12px;
+    margin-top: 0px;
+    margin-left: 0vw;
+  }
+  #end_list{
+	margin-right: 1px;
+	font-size: 5px;
+	padding: 1px;
+	}
+
+	#main{
+		height: 120.75vw !important;
+	}
+
+	#welcome{
+		margin-top: 50vw;
+	}
+	
+	#login{
+		padding: 3px;
+		font-size: 13px
+	}
+
+	#steps{
+		height: 480px;
+		background-image: url('../img/mini_steps.png');
+	}
+
+	#phone_content{
+		margin-right: 14.8% ;
+		margin-top: 22.2% ;
+		height: 70%;
+    	width: 33%;
+    	background-image: url('../img/test_mini.png');
+	}
+
+}
+
+.card{
+	background-color: white;
+}
+
+.card_title{
+	height: 50px;
+	font-family: 'Helvetica Neue';
+}
+
+#mail_list li{
+	margin-top: 40px;
+	font-size: 25px;
+}
+
+.ic{
+	cursor: pointer;
+}
+
+
+#myBtn {
+
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(0,123,255); /* Set a background color */
+  border-radius: 50%;
+  color: white; /* Text color */
+  font-weight: bold;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding-left: 10px;
+  padding-right: 10px;
+
+  border-radius: 50%; /* Rounded corners */
+  font-size: 40px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: white;
+  color: rgb(0,123,255);
+}
+
